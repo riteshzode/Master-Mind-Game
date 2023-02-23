@@ -39,6 +39,11 @@ def check_guess(user_guess, generated_color):
         else:
             color_dict[color] += 1
 
+        # if color not in color_dict:
+        #     color_dict[color] = 0
+        # color_dict[color] += 1
+     
+
     for i, j in zip(user_guess, generated_color):
         if i == j:
             color_dict[i] -= 1
